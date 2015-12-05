@@ -31,7 +31,9 @@
         android:gravity="center_horizontal"
         android:fontFamily="sans-serif-medium"
         android:textSize="14sp"
-        android:textColor="#616161"/>
+        android:textColor="#616161"
+        android:id="@+id/lblTeamA"
+        android:contentDescription="Team A" />
 
     <TextView
         android:id="@+id/team_a_score"
@@ -43,7 +45,8 @@
         android:layout_marginBottom="24dp"
         android:fontFamily="sans-serif-light"
         android:textSize="56sp"
-        android:textColor="#000000"/>
+        android:textColor="#000000"
+        android:contentDescription="Team A Score" />
 
     <Button
         android:text="+3 POINTS"
@@ -52,7 +55,9 @@
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginBottom="8dp"
-        android:onClick="addThreePointsA"/>
+        android:onClick="addThreePointsA"
+        android:id="@+id/btnTeamA3Pts"
+        android:contentDescription="Team A 3 Points" />
 
     <Button
         android:text="+2 POINTS"
@@ -61,7 +66,9 @@
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginBottom="8dp"
-        android:onClick="addTwoPointsA"/>
+        android:onClick="addTwoPointsA"
+        android:id="@+id/btnTeamA2Pts"
+        android:contentDescription="Team A 2 Points" />
 
     <Button
         android:text="FREE THROW"
@@ -69,7 +76,9 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
-        android:onClick="addOnePointA"/>
+        android:onClick="addOnePointA"
+        android:id="@+id/btnTeamAFreeThrow"
+        android:contentDescription="Team A Free Throw" />
 
     </LinearLayout>
     <View
@@ -94,7 +103,9 @@
             android:gravity="center_horizontal"
             android:fontFamily="sans-serif-medium"
             android:textSize="14sp"
-            android:textColor="#616161"/>
+            android:textColor="#616161"
+            android:contentDescription="Team B"
+            android:id="@+id/lblTeamB" />
 
         <TextView
             android:id="@+id/team_b_score"
@@ -106,7 +117,8 @@
             android:layout_marginBottom="24dp"
             android:fontFamily="sans-serif-light"
             android:textSize="56sp"
-            android:textColor="#000000"/>
+            android:textColor="#000000"
+            android:contentDescription="Team B Score" />
 
         <Button
             android:text="+3 POINTS"
@@ -115,7 +127,9 @@
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:layout_marginBottom="8dp"
-            android:onClick="addThreePointsB"/>
+            android:onClick="addThreePointsB"
+            android:id="@+id/btnTeamB3Pts"
+            android:contentDescription="Team B 3 Points" />
 
         <Button
             android:text="+2 POINTS"
@@ -124,7 +138,9 @@
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:layout_marginBottom="8dp"
-            android:onClick="addTwoPointsB"/>
+            android:onClick="addTwoPointsB"
+            android:id="@+id/btnTeamB2Pts"
+            android:contentDescription="Team B 2 Points" />
 
         <Button
             android:text="FREE THROW"
@@ -132,7 +148,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
-            android:onClick="addOnePointB"/>
+            android:onClick="addOnePointB"
+            android:id="@+id/btnTeamBFreeThrow"
+            android:contentDescription="Team B Free Throw" />
 
     </LinearLayout>
     </LinearLayout>
@@ -147,6 +165,7 @@
         android:onClick="resetScores"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        />
+        android:id="@+id/btnReset"
+        android:contentDescription="Reset Score" />
 
 </RelativeLayout>
