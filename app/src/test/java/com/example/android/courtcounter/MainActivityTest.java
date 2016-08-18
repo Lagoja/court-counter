@@ -36,7 +36,7 @@ public class MainActivityTest {
         capabilities.setCapability("appActivity", ".MainActivity");
         capabilities.setCapability("automationName", "Appium");
         capabilities.setCapability("app", "/Users/johnl/Developer/court-counter/app/build/outputs/apk/app-debug.apk");
-        capabilities.setCapability("deviceName","Google Nexus 5 - 5.0.0 - API 21 - 1080x1920 - 5.0");
+        capabilities.setCapability("deviceName","Nexus_5X_API_23");
         URL host = null;
         try {
             host = new URL("http://127.0.0.1:4723/wd/hub");
